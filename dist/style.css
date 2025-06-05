@@ -1,91 +1,105 @@
-/* Target the main chat widget (adjust class name based on inspection) */
+/* Target the main chat window */
 .n8n-chat-window {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 350px;
-  height: 500px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  background-color: #1e1e1e;
-  color: #fff;
-  z-index: 9999;
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  width: 350px !important;
+  height: 500px !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+  z-index: 9999 !important;
 }
 
-/* Target the chat message container */
-.n8n-chat-container {
-  flex: 1;
-  padding: 20px;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  background-color: #1e1e1e;
+/* Target the message container */
+.n8n-chat-messages {
+  flex: 1 !important;
+  padding: 20px !important;
+  overflow-y: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  background-color: #1e1e1e !important;
 }
 
 /* Target all messages */
 .n8n-chat-message {
-  max-width: 75%;
-  padding: 12px 16px;
-  border-radius: 12px;
-  margin-bottom: 12px;
-  white-space: pre-wrap;
-  animation: fadeIn 0.3s ease-in-out;
+  max-width: 75% !important;
+  padding: 12px 16px !important;
+  border-radius: 12px !important;
+  margin-bottom: 12px !important;
+  white-space: pre-wrap !important;
+  animation: fadeIn 0.3s ease-in-out !important;
 }
 
 /* Target user messages */
 .n8n-chat-message--user {
-  align-self: flex-end;
-  background-color: #10a37f;
-  color: white;
+  align-self: flex-end !important;
+  background-color: #10a37f !important;
+  color: white !important;
 }
 
 /* Target bot messages */
-.n8n-chat-message--bot {
-  align-self: flex-start;
-  background-color: #2d2d2d;
-  color: #e2e2e2;
+.n8n-chat-message--"bot {
+  align-self: flex-start !important;
+  background-color: #2d2d2d !important;
+  color: #e2e2e2 !important;
 }
 
-/* Target the input area */
+/* Target the input container */
 .n8n-chat-input-container {
-  display: flex;
-  padding: 12px;
-  background-color: #101010;
-  border-top: 1px solid #333;
+  display: flex !important;
+  padding: 12px !important;
+  background-color: #101010 !important;
+  border-top: 1px solid #333 !important;
 }
 
 /* Target the input field */
 .n8n-chat-input {
-  flex: 1;
-  padding: 12px 16px;
-  border-radius: 8px;
-  border: none;
-  font-size: 16px;
-  outline: none;
-  background-color: #1e1e1e;
-  color: white;
+  flex: 1 !important;
+  padding: 12px 16px !important;
+  border-radius: 8px !important;
+  border: none !important;
+  font-size: 16px !important;
+  outline: none !important;
+  background-color: #1e1e1e !important;
+  color: white !important;
 }
 
 /* Target the send button */
 .n8n-chat-send-button {
-  margin-left: 10px;
-  padding: 0 18px;
-  border: none;
-  border-radius: 8px;
-  BACKGROUND-COLOR: #10a37f;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
+  margin-left: 10px !important;
+  padding: 0 18px !important;
+  border: none !important;
+  border-radius: 8px !important;
+  background-color: #10a37f !important;
+  color: white !important;
+  cursor: pointer !important;
+  font-weight: bold !important;
+}
+
+/* Target the title */
+.n8n-chat-title {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+}
+
+/* Target the subtitle */
+.n8n-chat-subtitle {
+  color: #e2e2e2 !important;
+}
+
+/* Target the "New Conversation" button */
+.n8n-chat-button {
+  background-color: #10a37f !important;
+  color: white !important;
+  border-radius: 8px !important;
 }
 
 /* Animation for messages */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
